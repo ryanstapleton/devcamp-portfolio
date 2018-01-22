@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20180118225941) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  #created through scaffold generator
   create_table "blogs", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -22,6 +23,7 @@ ActiveRecord::Schema.define(version: 20180118225941) do
     t.datetime "updated_at", null: false
   end
 
+  # created through resource generator
   create_table "portfolios", force: :cascade do |t|
     t.string "title"
     t.string "subtitle"
@@ -32,6 +34,7 @@ ActiveRecord::Schema.define(version: 20180118225941) do
     t.datetime "updated_at", null: false
   end
 
+  # created through model generator
   create_table "skills", force: :cascade do |t|
     t.string "title"
     t.integer "percent_utilized"
