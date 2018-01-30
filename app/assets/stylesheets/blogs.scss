@@ -4,13 +4,17 @@
 
 body {
   background-color: black;
-  color: green
+  color: green;
 }
 
 a:link {
-  color: yellow
+  color: yellow;
 }
 
 a:visited {
-  color: goldenrod
+  color: goldenrod;
+}
+
+.bottom a {
+  color: white;
 }
