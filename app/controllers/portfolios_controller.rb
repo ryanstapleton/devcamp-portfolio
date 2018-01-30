@@ -1,5 +1,7 @@
 class PortfoliosController < ApplicationController
 
+  layout "portfolio"
+
   def index
     # Calling the model "Portfolio" and creating an
     # instance variable "@portfolio_items" made available to the view
