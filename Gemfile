@@ -58,3 +58,5 @@ gem 'devise', '~> 4.4', '>= 4.4.1'
 gem 'bootstrap', '~> 4.0.0'
 
 gem 'jquery-rails'
+
+gem 'view_tool_stapleton', git: 'https://github.com/ryanstapleton/view_tool_gem'
