@@ -59,4 +59,4 @@ gem 'bootstrap', '~> 4.0.0'
 
 gem 'jquery-rails'
 
-gem 'view_tool_stapleton', git: 'https://github.com/ryanstapleton/view_tool_gem'
+gem 'view_tool_stapleton', '~> 0.1.0'
