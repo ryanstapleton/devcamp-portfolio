@@ -1,16 +1,25 @@
 class PortfoliosController < ApplicationController
 before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
   layout "portfolio"
-  access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+  access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
 
   def index
     # Calling the model "Portfolio" and creating an
     # instance variable "@portfolio_items" made available to the view
-    @portfolio_items = Portfolio.all
+    @portfolio_items = Portfolio.by_position
   end
 
   def angular
     @angular_portfolio_items = Portfolio.angular
+  end
+
+  def sort
+    params[:order].each do |key, value|
+      Portfolio.find(value[:id]).update(position: value[:position])
+    end
+    
+    # Don't try to render a view
+    render body: nil
   end
 
   def show
