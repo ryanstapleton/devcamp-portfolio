@@ -13,6 +13,15 @@ before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
     @angular_portfolio_items = Portfolio.angular
   end
 
+  def sort
+    params[:order].each do |key, value|
+      Portfolio.find(value[:id]).update(position: value[:position])
+    end
+    
+    # Don't try to render a view
+    render body: nil
+  end
+
   def show
   end
 
