@@ -6,7 +6,7 @@ before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
   def index
     # Calling the model "Portfolio" and creating an
     # instance variable "@portfolio_items" made available to the view
-    @portfolio_items = Portfolio.all
+    @portfolio_items = Portfolio.by_position
   end
 
   def angular
