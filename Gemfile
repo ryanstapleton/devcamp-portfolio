@@ -66,4 +66,8 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 gem 'carrierwave-aws', '~> 1.3'
 gem 'carrierwave', '~> 1.2', '>= 1.2.2'
 gem 'mini_magick', '~> 4.8'
+
+# Nested forms 
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
+# Growl alerts in top right corner
+gem 'gritter', '~> 1.2'

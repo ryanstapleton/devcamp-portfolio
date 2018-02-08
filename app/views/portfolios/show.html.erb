@@ -2,6 +2,12 @@
   <div class="row">
     <div class="col-md-7">
       <%= image_tag portfolio_img(@portfolio_item.main_image, "main"), width: '100%' %>
+
+      <% if logged_in?(:site_admin) %>
+        <div class="edit-button">
+          <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-primary' %>
+        </div>
+      <% end %>
     </div>
 
     <div class="col-md-5">
@@ -21,10 +27,5 @@
       <p><%= t.name %></p>
       <% end %>
     </div>
-  <% if logged_in?(:site_admin) %>
-    <div class="col-md-12 edit-button">
-      <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-primary' %>
-    </div>
-  <% end %>
   </div>
 </div>

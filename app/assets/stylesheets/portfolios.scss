@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "jquery-ui";
+@import "gritter";
 
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
@@ -69,5 +70,5 @@ footer p {
 }
 
 .edit-button {
-  margin-top: 20px;
+  margin-top: 30px;
 }
