@@ -21,5 +21,10 @@
       <p><%= t.name %></p>
       <% end %>
     </div>
+  <% if logged_in?(:site_admin) %>
+    <div class="col-md-12 edit-button">
+      <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-primary' %>
+    </div>
+  <% end %>
   </div>
 </div>
