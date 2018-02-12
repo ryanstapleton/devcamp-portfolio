@@ -27,12 +27,17 @@
             # poster: 'home_bg.png'
           ) %>
 
-          <%= render "shared/application_nav" %>
+          <!--TODO: Style header/footer-->
+          <div class="row">
+            <%= render "shared/application_nav" %>
+          </div>
 
           <%= yield %>
 
-          <%= render "shared/application_footer" %>
-          
+          <div class="row">
+           <%= render "shared/application_footer" %>
+          </div>
+
           <%= alerts %>
 
           <%= source_helper("application") %>
