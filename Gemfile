@@ -71,3 +71,6 @@ gem 'mini_magick', '~> 4.8'
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
 # Growl alerts in top right corner
 gem 'gritter', '~> 1.2'
+
+# Twitter api connection
+gem 'twitter', '~> 6.2'
