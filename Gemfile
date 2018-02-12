@@ -74,3 +74,6 @@ gem 'gritter', '~> 1.2'
 
 # Twitter api connection
 gem 'twitter', '~> 6.2'
+
+# Redis database, used for actioncable
+gem 'redis', '~> 3.3', '>= 3.3.3'
