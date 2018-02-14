@@ -77,3 +77,9 @@ gem 'twitter', '~> 6.2'
 
 # Redis database, used for actioncable
 gem 'redis', '~> 3.3', '>= 3.3.3'
+
+# Markdown
+gem 'redcarpet', '~> 3.4'
+
+# Code syntax highlighting and images
+gem 'coderay', '~> 1.1', '>= 1.1.2'
