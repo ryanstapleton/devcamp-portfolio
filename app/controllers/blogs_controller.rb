@@ -18,12 +18,16 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+    if logged_in?(:site_admin) || @blog.published?
     # "includes" brings in other tables with a has-many relationship in one call to the database
-    @blog = Blog.includes(:comments).friendly.find(params[:id])
-    @comment = Comment.new
+      @blog = Blog.includes(:comments).friendly.find(params[:id])
+      @comment = Comment.new
 
-    @page_title = @blog.title
-    @seo_keywords = @blog.body
+      @page_title = @blog.title
+      @seo_keywords = @blog.body
+    else
+      redirect_to blogs_path, notice: "Oops! You need to be an admin to access that."
+    end
   end
 
   # GET /blogs/new
@@ -81,7 +85,8 @@ class BlogsController < ApplicationController
     elsif @blog.published?
       @blog.draft!
     end
-
+  
+                # blogs_path ~ blogs_url
     redirect_to blogs_url, notice: 'Post status has been updated'
   end
 
