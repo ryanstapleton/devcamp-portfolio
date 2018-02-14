@@ -7,5 +7,9 @@ class Blog < ApplicationRecord
 
   # belongs_to :topic
 
+  def self.recent
+    order(created_at: :desc)
+  end
+
   has_many :comments, dependent: :destroy
 end
