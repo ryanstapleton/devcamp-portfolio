@@ -1,8 +1,13 @@
 <div class="blog-masthead">
   <div class="container">
-    <nav class="nav blog-nav">
-      <%= nav_helper 'nav-link', 'span' %>
-      <%= login_helper 'nav-link' %>
-    </nav>
+    <div class="row">
+      <nav class="nav blog-nav-name col-2">
+        <%= link_to 'Ryan Stapleton', root_path, class: "navbar-brand" %>
+      </nav>
+      <nav class="nav col-10">
+        <%= nav_helper 'nav-link', 'span' %>
+        <%= login_helper 'nav-link' %>
+      </nav>
+    </div>
   </div>
 </div>
