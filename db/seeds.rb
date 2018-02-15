@@ -6,6 +6,23 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+User.create!(
+  name:"Ryan Stapleton", 
+  email:"hello@email.com", 
+  password:"123456", 
+  password_confirmation:"123456", 
+  role:"site_admin"
+)
+
+User.create!(
+  name:"George Washington", 
+  email:"hello1@email.com", 
+  password:"123456", 
+  password_confirmation:"123456"
+)
+
+puts "1 user created, 1 site admin created"
+
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
@@ -58,8 +75,3 @@ puts "9 portfolio items created"
 end
 
 puts "3 technology items created"
-
-User.create(name:"Ryan Stapleton", email:"hello@email.com", password:"123456", password_confirmation:"123456", role:"site_admin")
-User.create(name:"George Washington", email:"hello1@email.com", password:"123456", password_confirmation:"123456", role:"user")
-
-puts "1 user created, 1 site admin created"
