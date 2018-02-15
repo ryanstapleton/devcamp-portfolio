@@ -88,7 +88,7 @@ class BlogsController < ApplicationController
     end
   
                 # blogs_path ~ blogs_url
-    redirect_to blogs_url, notice: 'Post status has been updated'
+    redirect_to blogs_url, notice: "Post status has been updated to '#{@blog.status}'."
   end
 
   private
