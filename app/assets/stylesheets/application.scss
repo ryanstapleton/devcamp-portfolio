@@ -224,11 +224,14 @@ h6, .h6 {
 }
 
 .tech-news > .card {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
   padding: 30px;
 }
 
 .tech-news a {
-  color: green;
+  color: rgb(135, 230, 233);
 }
 
 .app-card-container .card {
@@ -242,8 +245,8 @@ h6, .h6 {
 }
 
 .app-card-container {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 15%;
+  margin-bottom: 15%;
   text-align: left;
 }
 
@@ -259,4 +262,17 @@ h6, .h6 {
   color: white;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.masthead-about {
+  top: 0;
+}
+.mastfoot-about {
+  position: relative;
+  bottom: 0;
 }

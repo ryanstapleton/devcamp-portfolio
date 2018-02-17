@@ -9,6 +9,14 @@ module ApplicationHelper
     end
   end
 
+  def about_me_header_helper
+    "masthead-about".html_safe if current_page?("/about-me")
+  end
+
+  def about_me_footer_helper
+    "mastfoot-about".html_safe if current_page?("/about-me")
+  end
+
   def source_helper(styles)
     if session[:source]
       greeting = "Thanks for visiting me from #{session[:source]}, feel free to #{link_to 'contact me', contact_path}."
