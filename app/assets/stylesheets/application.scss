@@ -175,9 +175,16 @@ h6, .h6 {
  * Custom Styles
  */
 
+.custom-card {
+  color: black;
+}
+
 .card-block {
   color: black;
   text-align: left;
+  padding: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .auth-links a {
@@ -256,12 +263,6 @@ h6, .h6 {
 
 .profile-image {
   
-}
-
-.card-block {
-  color: white;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .btn:focus,.btn:active {
