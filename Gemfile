@@ -84,4 +84,6 @@ gem 'redcarpet', '~> 3.4'
 # Code syntax highlighting and images
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 
+gem 'nodejs-rails', '~> 0.0.1' 
+
 ruby "2.4.0"
