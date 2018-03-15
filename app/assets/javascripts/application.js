@@ -18,7 +18,6 @@
 //= require cocoon
 //= require gritter
 //= require cable
-//= require nodejs-rails
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
