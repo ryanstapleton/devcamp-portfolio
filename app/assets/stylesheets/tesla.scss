@@ -1,0 +1,151 @@
+/* ---------Background & Body Styles--------- */
+
+#wrapper { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: 
+      linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+      asset_url("tesla/img.jpg"), 
+      center center;
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* --------------Header Styles-------------- */
+
+#header {
+  padding-top: 12px;
+}
+
+#logo-area {
+  padding-left: 35px;
+}
+
+#logo {
+  height: 13px;
+}
+
+#left-navigation-area a {
+  margin: 9px;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  transition: color 300ms;
+}
+
+#right-navigation-area a {
+  margin: 9px;
+  font-size: 13px;;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  transition: color 300ms;
+}
+
+#right-navigation-area {
+  padding-right: 30px;
+}
+
+#left-navigation-area a:hover,
+#right-navigation-area a:hover {
+  color: grey;
+}
+
+#left-navigation-area a:active,
+#right-navigation-area a:active,
+#left-navigation-area a:visited,
+#right-navigation-area a:visited,
+#left-navigation-area a:link,
+#right-navigation-area a:link {
+  text-decoration: none;
+}
+
+/* --------------Header Styles-------------- */
+
+#lead-text h1 {
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+#lead-text {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+#lead-button-area {
+  margin-bottom: 20px;
+}
+
+.lead-button {
+  margin-left: 2px;
+  margin-right: 2px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  width: 175px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.0);
+  transition: border 700ms;
+  outline: none;
+}
+
+.lead-button:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+#newsletter-link a {
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  transition: color 300ms;
+}
+
+#newsletter-link a:hover {
+  text-decoration: none;
+  color: rgb(202, 0, 0);
+}
+
+#newsletter-link a:hover,
+#newsletter-link a:link,
+#newsletter-link a:visited,
+#newsletter-link a:active {
+  text-decoration: none;
+}
+
+/* --------------Footer Styles-------------- */
+
+#footer{
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 8px;
+}
+
+#footer a {
+  color: white;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 2px;
+}
+
+#footer a:hover,
+#footer a:link,
+#footer a:visited,
+#footer a:active {
+  text-decoration: none;
+}
+
+.bullet {
+  color: gray;
+}
+
+#flag {
+  margin-left: 8px;
+  height: 10px;
+}

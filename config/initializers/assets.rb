@@ -15,3 +15,7 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( blogs.css )
 Rails.application.config.assets.precompile += %w( portfolios.css )
+Rails.application.config.assets.precompile += %w( tesla.css )
+Rails.application.config.assets.precompile += %w( google.css )
+Rails.application.config.assets.precompile += %w( template.css )
+Rails.application.config.assets.precompile += %w( pinterest.css )

@@ -1,0 +1,40 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'google' %>
+<% end %>
+
+<header>
+    <div id="left-header">
+        <a href="#">About</a>
+        <a href="#">Store</a>
+    </div>
+    <div id="right-header">
+        <a href="#">Gmail</a>    
+        <a href="#">Images</a>
+        <input type="button" name="sign-in" id="blue-button" value="Sign in" />
+    </div>
+</header>
+
+<div id="content-area">
+    <div id="logo">
+      <%= image_tag 'google/google.png', alt: "Google logo png" %>
+    </div>
+    <div id="search-bar">
+        <input type="text" name="google-searh" id="search" />
+    </div>
+    <div id="button-area">
+        <input type="button" name="google-button" class="button" value="Google Search"/>
+        <input type="button" name="random-button" class="button" value="I'm Feeling Lucky"/>
+    </div>
+</div>
+
+<footer>
+    <div id="left-footer">
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+    </div>
+    <div id="right-footer">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Setting</a>
+    </div>
+</footer>

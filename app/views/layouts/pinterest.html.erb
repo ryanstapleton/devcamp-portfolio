@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pinterest Clone</title>
+        <%= yield(:head) %>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script re="text/javascript">
+            function focusIt() {
+                 var searchBar = document.getElementById("search-bar");
+                 searchBar.focus();
+            }  
+
+            onload = focusIt;
+        </script>
+    </head>
+    <body>
+      <%= yield %>
+    </body>
+</html>

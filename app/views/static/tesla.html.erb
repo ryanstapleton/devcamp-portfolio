@@ -1,0 +1,73 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'tesla' %>
+<% end %>
+
+<div id="wrapper">
+
+    <div class="container_fluid">
+        <div class="row" id="header">
+
+            <div class="col-2 text-left" id="logo-area">
+              <a href="#">
+                <%= image_tag 'tesla/logo.png', id: "logo" %>
+              </a>
+            </div>
+
+            <div class="col-8 text-center" id="left-navigation-area">
+                <a href="#">MODEL S</a>
+                <a href="#">MODEL X</a>
+                <a href="#">MODEL 3</a>
+                <a href="#">ROADSTER</a>
+                <a href="#">ENERGY</a>
+            </div>
+
+            <div class="col-2 text-right" id="right-navigation-area">                  
+                <a href="#">SHOP</a>
+                <a href="#">SIGN IN</a>
+                <span class="align-middle">
+                    <a href="#"><i class="fa fa-bars" style="font-size: 20px" aria-hidden="true"></i></a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" id="lead-text">
+                <h1>Quickest Acceleration.</h1>
+                <h1>Longest Range. The Safest Cars Ever.</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center" id="lead-button-area">
+                <input type="button" class="lead-button" value="ORDER YOURS"/>
+                <input type="button" class="lead-button" value="NEW INVENTORY"/>
+                <input type="button" class="lead-button" value="USED INVENTORY"/>
+                <input type="button" class="lead-button" value="TEST DRIVE"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center" id="newsletter-link">
+                <a href="#">GET THE NEWSLETTER <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_fluid">
+        <div class="row">
+            <div class="col-12 text-center" id="footer">
+                <a href="#">Tesla @ 2018 &nbsp; <span class="bullet">&bull;</span> &nbsp;</a>
+                <a href="#">Privacy & Legal &nbsp; <span class="bullet">&bull;</span> &nbsp;</a>
+                <a href="#">Contact &nbsp; <span class="bullet">&bull;</span> &nbsp;</a>
+                <a href="#">Careers &nbsp; <span class="bullet">&bull;</span> &nbsp;</a>
+                <a href="#">Forums &nbsp; <span class="bullet">&bull;</span> &nbsp;</a>
+                <a href="#">Locations &nbsp; <span class="bullet">&bull;</span> &nbsp;</a>
+                <a href="#">
+                  <%= image_tag 'tesla/flag.gif', id: "flag" %>
+                </a>
+            </div>                    
+        </div>
+    </div>
+</div>  
+

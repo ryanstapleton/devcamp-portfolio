@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Copy</title>
+        <%= yield(:head) %>
+        <script type="text/javascript">
+            function focusIt() {
+                var mySearchBar = document.getElementById("search");
+                mySearchBar.focus();
+            }
+
+            onload = focusIt;
+        </script>
+    </head>
+    
+    <body>
+      <%= yield %>
+    </body>
+</html>

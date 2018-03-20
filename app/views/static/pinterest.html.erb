@@ -1,0 +1,96 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'pinterest' %>
+<% end %>
+
+<div id="header">
+    <div id="p-logo">
+      <%= image_tag 'pinterest/pinterest-logo.png', alt: "Pinterest logo png", id: "logo-icon" %>
+    </div>
+
+    <div id="p-title">
+        <ul>
+            <li>Pinterest</li>
+        </ul>
+    </div>
+
+    <div id="search-bar-area">
+        <div id="fa-mag-glass">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>                
+        <input type="text" id="search-bar" placeholder="Search for anything" />
+    </div>
+
+    <div id="icon-area">
+        <div id="icon-field">
+            <a href="#" class="icon"><i class="fa fa-bars" aria-hidden="true"></i></a>   
+            <a href="#" class="icon"><i class="fa fa-user" aria-hidden="true"></i></a>
+            <a href="#" class="icon"><i class="fa fa-commenting" aria-hidden="true"></i></a>
+        </div> 
+    </div>
+
+</div>
+<div id="content-area">
+    <div id="left-column" class="column">
+        <div id="box-1" class="content-box">
+            <%= image_tag 'pinterest/s1.jpg', class: "box-img" %>                
+            <p class="box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+        </div>
+
+        <div id="box-2" class="content-box">
+            <%= image_tag 'pinterest/s2.jpg', class: "box-img" %>       
+            <p class="box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+        </div>
+
+        <div id="box-3" class="content-box">
+            <<%= image_tag 'pinterest/s3.jpg', class: "box-img" %> 
+            <p class="box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div id="box-4" class="content-box">
+            <%= image_tag 'pinterest/s4.jpg', class: "box-img" %> 
+            <p class="box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+    </div>
+    <div id="middle-column" class="column">
+        <div id="box-5" class="content-box">
+            <%= image_tag 'pinterest/s5.jpg', class: "box-img" %> 
+            <p class="box-p">Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div id="box-6" class="content-box">
+            <%= image_tag 'pinterest/s6.jpeg', class: "box-img" %> 
+            <p class="box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+
+        <div id="box-7" class="content-box">
+            <%= image_tag 'pinterest/s7.jpg', class: "box-img" %> 
+            <p class="box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p>
+        </div>
+
+        <div id="box-8" class="content-box">
+            <%= image_tag 'pinterest/s8.jpeg', class: "box-img" %> 
+            <p class="box-p">Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+    </div>
+    <div id="right-column" class="column">
+        <div id="box-9" class="content-box">
+            <%= image_tag 'pinterest/s9.jpg', class: "box-img" %> 
+            <p class="box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <div id="box-10" class="content-box">
+            <%= image_tag 'pinterest/s10.jpg', class: "box-img" %> 
+            <p class="box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div id="box-11" class="content-box">
+            <%= image_tag 'pinterest/s11.jpg', class: "box-img" %> 
+            <p class="box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+
+        <div id="box-12" class="content-box">
+            <%= image_tag 'pinterest/s12.jpg', class: "box-img" %> 
+            <p class="box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+</div>
