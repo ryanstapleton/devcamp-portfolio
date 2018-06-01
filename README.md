@@ -1,11 +1,18 @@
 # Devcamp Portfolio Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple Rails portfolio/blog app.
 
-Things you may want to cover:
+* Ruby version 2.4.0
+* Rails version 5.1.4
 
-* Ruby version
+### Features
+
+- Real time chat engine for comments
+- Blog
+- Portfolio
+- Drag and drop interface for admin
+
+### TODO
 
 * System dependencies
 
@@ -22,15 +29,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
-> This is a Ruby on Rails 5 application that allows users to create their own portfolio.
-
-### Features
-
-- Real time chat engine for comments
-- Blog
-- Portfolio
-- Drag and drop interface
 
 ### Code Example
 
